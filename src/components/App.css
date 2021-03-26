@@ -1,0 +1,31 @@
+body {
+  background: rgb(58, 58, 58);
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "songlist songdetail";
+}
+
+.songlist-container {
+  grid-area: songlist;
+}
+
+.songdetail-container {
+  grid-area: songdetail;
+}
+
+.songlist-item,
+.songdetail-container {
+  background: rgb(66, 66, 66);
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin: 10px;
+  font-family: "New Tegomin", serif;
+  cursor: pointer;
+}
